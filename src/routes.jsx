@@ -1,12 +1,12 @@
 import {
   HomeIcon,
   UserCircleIcon,
-  TableCellsIcon,
   InformationCircleIcon,
   ServerStackIcon,
   RectangleStackIcon,
   UsersIcon,
   FolderIcon,
+  FolderOpenIcon,
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Product, Products, Users, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
@@ -32,7 +32,7 @@ export const routes = [
         element: <Profile />,
       },
       {
-        icon: <TableCellsIcon {...icon} />,
+        icon: <FolderIcon {...icon} />,
         name: "Product",
         path: "/product",
         element: <Product />,
@@ -56,7 +56,7 @@ export const routes = [
         element: <Users />,
       },
       {
-        icon: <FolderIcon {...icon} />,
+        icon: <FolderOpenIcon {...icon} />,
         name: "products management",
         path: "/products",
         element: <Products />,

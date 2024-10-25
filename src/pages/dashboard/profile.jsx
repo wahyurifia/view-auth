@@ -39,18 +39,18 @@ export function Profile() {
                 </Typography>
               </div>
             </div>
-          
+
           </div>
           <div className="gird-cols-1 mb-12 flex gap-12 px-4 lg:grid-cols-2 xl:grid-cols-3 pb-5">
-          
+
             <ProfileInfoCard
               title="Profile Information"
-              description="Hi, I'm Alec Thompson, Decisions: If you can't decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality)."
+              description="Hi, I am a new user, and I am ready to explore the website created by Wahyu Rifia Rizki. Check my GitHub and Instagram on the right in the settings menu."
               details={{
                 "Full Name": "Wahyu Rifia Rizki",
                 email: "wahyu@gmail.com",
                 sinceAt: "01-02-2003",
-                
+
               }}
               action={
                 <Tooltip content="Edit Profile">
@@ -59,7 +59,7 @@ export function Profile() {
               }
             />
           </div>
-        
+
         </CardBody>
       </Card>
     </>
