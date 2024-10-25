@@ -5,9 +5,13 @@ import {
   Typography,
   Avatar,
   Chip,
+  Button,
 } from "@material-tailwind/react";
 import { fetchDataFromSupabase } from "@/data";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { UserPlusIcon } from "@heroicons/react/24/solid";
+import { AddUser } from "@/widgets/modal";
 
 export function Users() {
   const [data, setData] = useState([]);
@@ -28,9 +32,10 @@ export function Users() {
   return (
     <div className="mt-12 mb-8 flex flex-col gap-12">
       <Card>
-        <CardHeader variant="gradient" color="gray" className="mb-8 p-6">
+        <CardHeader variant="gradient" color="gray" className="mb-8 p-6 flex gap-7 items-center">
+          <AddUser />
           <Typography variant="h6" color="white">
-            Authors Table Product
+            Users Table List
           </Typography>
         </CardHeader>
         <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">
@@ -64,7 +69,7 @@ export function Users() {
                     <tr key={name}>
                       <td className={className}>
                         <div className="flex items-center gap-4">
-                          <Avatar src={"/img/team-2.jpeg"} alt={name} size="sm" variant="rounded" />
+                          <Avatar src={"/img/default-user.png"} alt={name} size="sm" variant="rounded" />
                           <div>
                             <Typography
                               variant="small"

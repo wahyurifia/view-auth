@@ -1,22 +1,24 @@
+import { convertRupiah } from "@/utils/rupiah";
+
 export const datasProduct = [
   {
-    img: "/img/home-decor-1.jpeg",
+    img: "/img/product.png",
     name: "Kursi Goyang",
-    price: 10000,
+    price: convertRupiah(10000),
     status: true,
     date: "23/04/18",
   },
   {
-    img: "/img/home-decor-2.jpeg",
+    img: "/img/product.png",
     name: "Meja bundar",
-    price: 15000,
+    price: convertRupiah(15000),
     status: false,
     date: "11/01/19",
   },
   {
-    img: "/img/home-decor-3.jpeg",
+    img: "/img/product.png",
     name: "Panci Terbang",
-    price: 20000,
+    price: convertRupiah(100000),
     status: true,
     date: "19/09/17",
   },

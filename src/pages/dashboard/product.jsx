@@ -7,14 +7,18 @@ import {
   Chip,
 } from "@material-tailwind/react";
 import { datasProduct } from "@/data";
+import { AddProduct } from "@/widgets/modal/addProduct";
 
 export function Product() {
   return (
     <div className="mt-12 mb-8 flex flex-col gap-12">
       <Card>
-        <CardHeader variant="gradient" color="gray" className="mb-8 p-6">
+        <CardHeader variant="gradient" color="gray" className="mb-8 p-6 flex gap-7 items-center">
+
+          <AddProduct />
+
           <Typography variant="h6" color="white">
-            User Table Product
+            Product Table List
           </Typography>
         </CardHeader>
         <CardBody className="overflow-x-scroll px-0 pt-0 pb-2">

@@ -14,9 +14,7 @@ export const fetchDataFromSupabase = async (user) => {
             },
         });
 
-        // Memetakan data agar sesuai dengan struktur yang diinginkan
         const formattedData = response.data.map((item) => ({
-            // img: item.img,    
             name: item.name,
             email: item.email,
             role: item.role,

@@ -68,7 +68,7 @@ export function DashboardNavbar() {
             >
               Wahyu
             </Typography>
-            <Avatar src={"/img/team-2.jpeg"} size="sm" variant="circular" />
+            <Avatar src={"/img/default-user.png"} size="sm" variant="circular" />
 
           </div>
 

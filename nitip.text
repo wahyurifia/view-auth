@@ -28,3 +28,26 @@ export const fetchDataFromSupabase = async (tableName) => {
     throw error;
   }
 };
+
+
+
+<div>
+            <Typography
+              variant="small"
+              color="blue-gray"
+              className="mb-2 text-left font-medium"
+            >
+              Category
+            </Typography>
+            <Select
+              className="!w-full !border-[1.5px] !border-blue-gray-200/90 !border-t-blue-gray-200/90 bg-white text-gray-800 ring-4 ring-transparent placeholder:text-gray-600 focus:!border-primary focus:!border-t-blue-gray-900 group-hover:!border-primary"
+              placeholder="1"
+              labelProps={{
+                className: "hidden",
+              }}
+            >
+              <Option>Clothing</Option>
+              <Option>Fashion</Option>
+              <Option>Watches</Option>
+            </Select>
+          </div>
