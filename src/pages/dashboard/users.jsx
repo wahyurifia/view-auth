@@ -5,21 +5,17 @@ import {
   Typography,
   Avatar,
   Chip,
-  Button,
 } from "@material-tailwind/react";
 import { fetchDataFromSupabase } from "@/data";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { UserPlusIcon } from "@heroicons/react/24/solid";
 import { AddUser } from "@/widgets/modal";
 
 export function Users() {
   const [data, setData] = useState([]);
-  console.log(data);
 
   const fetchData = async () => {
     try {
-      const result = await fetchDataFromSupabase('user'); // Ganti 'your-table' dengan nama tabel Anda.
+      const result = await fetchDataFromSupabase('user');
       setData(result)
 
     } catch (error) {

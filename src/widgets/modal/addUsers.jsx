@@ -7,7 +7,6 @@ import {
     Typography,
     DialogBody,
     DialogHeader,
-    DialogFooter,
     Select,
     Option,
 } from "@material-tailwind/react";
@@ -119,9 +118,6 @@ export function AddUser() {
 
                     </DialogBody>
                 </form>
-                <DialogFooter>
-
-                </DialogFooter>
             </Dialog>
         </>
     );
